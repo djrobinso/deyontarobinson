@@ -19,22 +19,21 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+/**  background-image: url('./img/apple-black-and-white-black-and-white-169573.jpg');
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: inherit;
+  min-width: inherit;
+  max-height: 1500px;
+  max-width: 1280px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  **/
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.intro_page_heading {
-  text-align: right;
-  color: red;
-  position: sticky;
-
+.landing-grid {
+  background-image: image('./img/apple-black-and-white-black-and-white-169573.jpg');
 }

@@ -1,18 +1,18 @@
 import React from 'react';
+import {Grid, Cell} from 'react-mdl';
 
 
 
 const Title = () => {
   return (
 
-      <div class='container'>
-        <img src='./img/cool-background.png'/>
-          <div class='intro_page_heading'>
-            <p>Deyonta J. Robinson</p>
-            <p>Web Applications / Software Developer</p>
-            <p></p>
-          </div>
+      <div class='intro_page'>
+        <Grid class='landing-grid'>
+          <p>Deyonta J Robinson</p>
+          <p>Web Applications / Software Deverloper</p>
+        </Grid>
       </div>
+
 
   )
 }

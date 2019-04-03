@@ -6,8 +6,6 @@ import Router from './components/Router';
 import './App.css';
 import Footer from './components/footer';
 
-//import logo from './logo.svg';
-//import './App.css';
 
 class App extends Component {
   render() {
@@ -15,31 +13,30 @@ class App extends Component {
 
       <div>
         <div className="demo-big-content">
-    <Layout>
-        <Header title="Title" scroll>
+          <Layout>
+            <Header className='header-color' title="Title" scroll>
+              <Navigation>
+                <a class="nav-link" href="#"><NavLink to='/about_me'>About Me</NavLink></a>
+                <a class="nav-link" href="#"><NavLink to='/education'>Education</NavLink></a>
+                <a class="nav-link" href="#"><NavLink to='/portfolio'>My Portfolio</NavLink></a>
+                <a class="nav-link" href="#"><NavLink to='/contact'>Contact</NavLink></a>
+              </Navigation>
+            </Header>
+            <Drawer className='side-nav-color' title="Title">
             <Navigation>
                 <a class="nav-link" href="#"><NavLink to='/about_me'>About Me</NavLink></a>
                 <a class="nav-link" href="#"><NavLink to='/education'>Education</NavLink></a>
                 <a class="nav-link" href="#"><NavLink to='/portfolio'>My Portfolio</NavLink></a>
                 <a class="nav-link" href="#"><NavLink to='/contact'>Contact</NavLink></a>
             </Navigation>
-        </Header>
-        <Drawer title="Title">
-            <Navigation>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-            </Navigation>
-        </Drawer>
-        <Content>
-            <div className="page-content" />
-        </Content>
-    </Layout>
-</div>
-
-        <Router />
+          </Drawer>
+          <Content className='content'>
+              <div className="page-content" />
+              <Router />
+          </Content>
+        </Layout>
       </div>
+  </div>
 
     );
   }

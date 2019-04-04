@@ -7,13 +7,19 @@ import * as serviceWorker from './serviceWorker';
 import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 
+/**
 const app = (
   <BrowserRouter>
      <App />
   </BrowserRouter>
 )
+**/
 
-ReactDOM.render(app, document.getElementById('root'));
+ReactDOM.render(
+  <BrowserRouter>
+     <App />
+  </BrowserRouter>
+  , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

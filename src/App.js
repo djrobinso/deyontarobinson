@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
-import { NavLink } from 'react-router-dom';
 import Router from './components/Router';
 import './App.css';
-import Footer from './components/footer';
 
 
 class App extends Component {
@@ -14,20 +12,22 @@ class App extends Component {
       <div>
         <div className="demo-big-content">
           <Layout>
-            <Header className='header-color' title="Title" scroll>
+            <Header className='header-color' title="Deyonta Robinson" scroll>
               <Navigation>
-                <a class="nav-link" href="#"><NavLink to='/about_me'>About Me</NavLink></a>
-                <a class="nav-link" href="#"><NavLink to='/education'>Education</NavLink></a>
-                <a class="nav-link" href="#"><NavLink to='/portfolio'>My Portfolio</NavLink></a>
-                <a class="nav-link" href="#"><NavLink to='/contact'>Contact</NavLink></a>
+                <Link to='/'>Home</Link>
+                <Link to='/about_me'>About Me</Link>
+                <Link to='/skills'>Skills</Link>
+                <Link to='/'></Link>
+                <Link to='/contact'>Contact</Link>
               </Navigation>
             </Header>
-            <Drawer className='side-nav-color' title="Title">
+            <Drawer className='side-nav-color' title="Deyonta Robinson">
             <Navigation>
-                <a class="nav-link" href="#"><NavLink to='/about_me'>About Me</NavLink></a>
-                <a class="nav-link" href="#"><NavLink to='/education'>Education</NavLink></a>
-                <a class="nav-link" href="#"><NavLink to='/portfolio'>My Portfolio</NavLink></a>
-                <a class="nav-link" href="#"><NavLink to='/contact'>Contact</NavLink></a>
+                <Link to='/'>Home</Link>
+                <Link to='/about_me'>About Me</Link>
+                <Link to='/skills'>Skills</Link>
+                <Link to='/'></Link>
+                <Link to='/contact'>Contact</Link>
             </Navigation>
           </Drawer>
           <Content className='content'>
@@ -41,5 +41,4 @@ class App extends Component {
     );
   }
 }
-
 export default App;

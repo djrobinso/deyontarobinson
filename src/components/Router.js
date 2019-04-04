@@ -3,24 +3,18 @@ import {Switch, Route } from 'react-router-dom';
 
 import Intro from './intro_page';
 import About from './about_me';
-import Education from './education';
-import Portfolio from './portfolio';
 import Contact from './contact';
+import Skills from './skills';
 
 
-
-const Router = (props) => {
-  return (
+const Router = () => (
 
     <Switch>
       <Route exact path='/' component={Intro} />
-      <Route exact path='/about_me' component={About} />
-      <Route exact path='/education' component={Education} />
-      <Route exact path='/portfolio' componenet={Portfolio} />
-      <Route exact path='/contact' component={Contact} />
+      <Route path='/about_me' component={About} />
+      <Route path='/skills' component={Skills}/>
+      <Route path='/contact' component={Contact} />
     </Switch>
 
-  )
-}
-
-export default Router
+)
+export default Router;

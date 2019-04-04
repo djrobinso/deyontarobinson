@@ -1,8 +1,3 @@
-body {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
 
 .content {
   background: #232526;  /* fallback for old browsers */
@@ -29,6 +24,7 @@ body {
   background-image: url('./img/apple-black-and-white-black-and-white-169573.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0.6;
 }
 
 .intro-container {

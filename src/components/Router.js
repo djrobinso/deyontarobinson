@@ -5,6 +5,7 @@ import Intro from './intro_page';
 import About from './about_me';
 import Contact from './contact';
 import Skills from './skills';
+import Projects from './projects';
 
 
 const Router = () => (
@@ -13,7 +14,8 @@ const Router = () => (
       <Route exact path='/' component={Intro} />
       <Route path='/about_me' component={About} />
       <Route path='/skills' component={Skills}/>
-      <Route path='/contact' component={Contact} />
+      <Route path='/contact' component={Contact}/>
+      <Route path='/projects' component={Projects}/>
     </Switch>
 
 )

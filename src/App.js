@@ -12,22 +12,22 @@ class App extends Component {
       <div>
         <div className="demo-big-content">
           <Layout>
-            <Header className='header-color' title="Deyonta Robinson" scroll>
+            <Header className='header-color' title="Deyonta" scroll>
               <Navigation>
-                <Link to='/'>Home</Link>
-                <Link to='/about_me'>About Me</Link>
-                <Link to='/skills'>Skills</Link>
-                <Link to='/projects'>Projects</Link>
-                <Link to='/contact'>Contact</Link>
+                <Link className='nav-link' to='/'>Home</Link>
+                <Link className="nav-link" to='/about_me'>About Me</Link>
+                <Link className="nav-link" to='/skills'>Skills</Link>
+                <Link className="nav-link" to='/projects'>Projects</Link>
+                <Link className="nav-link" to='/contact'>Contact</Link>
               </Navigation>
             </Header>
             <Drawer className='side-nav-color' title="Deyonta Robinson">
             <Navigation>
-                <Link to='/'>Home</Link>
-                <Link to='/about_me'>About Me</Link>
-                <Link to='/skills'>Skills</Link>
-                <Link to='/projects'>Projects</Link>
-                <Link to='/contact'>Contact</Link>
+                <Link className="nav-link" to='/'>Home</Link>
+                <Link className="nav-link" to='/about_me'>About Me</Link>
+                <Link className="nav-link" to='/skills'>Skills</Link>
+                <Link className="nav-link" to='/projects'>Projects</Link>
+                <Link className="nav-link" to='/contact'>Contact</Link>
             </Navigation>
           </Drawer>
           <Content className='content'>

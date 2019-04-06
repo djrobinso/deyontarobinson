@@ -9,24 +9,38 @@
   background: #232526;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Roboto Mono';
 }
+
 
 .side-nav-color {
   background: #232526;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Roboto Mono';
+  text-decoration: none;
+
 }
 
 
 .intro_page{
   height: 100%;
   width: 100%;
-  background-image: url('./img/apple-black-and-white-black-and-white-169573.jpg');
+  background-image: url('./img/code.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.6;
+  opacity: 0.7;
+  padding-left: 30px;
+
 }
 
+.intro_page h1 {
+  color: rgb(255, 255, 255);
+  font-size: 80px;
+  font-family: 'Roboto Mono';
+}
+
+/***
 .intro-container {
   position: relative;
   text-align: center;
@@ -35,12 +49,74 @@
   margin: 0;
   padding: 0;
 }
+**/
+
+.intro_page p {
+  font-family:"Roboto Mono";
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
 
 
  .banner-text {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  transform: translate(-50%, -50%);]
+  color:rgb(255, 255, 255);
+  font-family:"Ubuntu";
  }
+
+/**
+ .banner-text h1 {
+   color:rgb(255, 255, 255);
+   font-family:"Ubuntu";
+ }
+
+ .banner-text h2 {
+   color:rgb(255, 255, 255);
+   font-family:"Ubuntu";
+ }
+**/
+
+.ghost-button-transition {
+  font-size: 20px;
+  font-family:"Roboto Mono";
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+.ghost-button-transition:hover,
+.ghost-button-transition:active {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+.nav-link:hover{
+  color: rgba(233, 146, 146, 0.87);
+}
+
+/***
+CSS for the about page
+***/
+.about-me-header {
+  color: rgb(255, 255, 255);
+  font-family:"Roboto Mono";
+}
+
+.about-page-content {
+padding-top: 20px;
+padding-left: 30px;
+}

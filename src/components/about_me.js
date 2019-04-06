@@ -5,8 +5,8 @@ import React from 'react';
 const About = () => {
   return (
 
-    <div>
-      <h1>About Me </h1>
+    <div className='about-page-content'>
+      <h1 className='about-me-header'>About Me </h1>
     </div>
 
   )
